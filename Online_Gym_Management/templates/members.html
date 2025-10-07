@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Members</title></head>
+<body>
+<h2>Members List</h2>
+<ul>
+{% for member in members %}
+<li>{{ member[1] }} - Age: {{ member[2] }} - Membership: {{ member[3] }}</li>
+{% endfor %}
+</ul>
+<a href='/dashboard'>Back to Dashboard</a>
+</body>
+</html>
